@@ -31,4 +31,4 @@ boyan_csie_notebook
 2. 所有筆記資源皆為公開且不可商用，請勿外流筆記資源到市面上，所有法律追訴權將被保留。
 
 ## Lisence  
-[LGPL](LICENSE) © Hank Chen  
+[CC BY-NC 4.0](LICENSE) © Hank Chen  
