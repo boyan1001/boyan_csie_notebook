@@ -32,4 +32,4 @@ boyan_csie_notebook
 2. 所有筆記資源皆為公開且不可商用。
 
 ## Lisence  
-[CC BY-NC 4.0](LICENSE-CC-BY-NC-ND-4.0.md) © Hank Chen  
+[CC BY-NC 4.0](LICENSE.md) © Hank Chen  
