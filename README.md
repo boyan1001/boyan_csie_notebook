@@ -27,8 +27,8 @@ boyan_csie_notebook
 
 ## 貢獻者須知  
 
-1. 未經作者許可，請勿刪除別人已經上傳的筆記。
-2. 所有筆記資源皆為公開且不可商用，請勿外流筆記資源到市面上，所有法律追訴權將被保留。
+1. 有任何想法，歡迎在 [Issues](https://github.com/boyan1001/boyan_csie_notebook/issues) 提出
+2. 所有筆記資源皆為公開且不可商用。
 
 ## Lisence  
 [CC BY-NC 4.0](LICENSE-CC-BY-NC-ND-4.0.md) © Hank Chen  
