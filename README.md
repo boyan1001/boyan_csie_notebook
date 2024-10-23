@@ -26,7 +26,7 @@ boyan_csie_notebook
 
 但是，基於方便維護，目前手寫筆記盡量用.pdf上傳。
 
-## 貢獻者須知  
+## 🛠️ 貢獻者須知  
 
 1. 有任何想法，歡迎在 [Issues](https://github.com/boyan1001/boyan_csie_notebook/issues) 提出
 2. 所有筆記資源皆為公開且不可商用。
