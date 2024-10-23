@@ -10,6 +10,7 @@
 
 ```sh
 boyan_csie_notebook
+├── /github/ github action 小工具，勿碰
 ├── /數學/  儲存數學相關的筆記
 │  ├── CSU0015_機率論.pdf
 │  └── ...
