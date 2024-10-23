@@ -1,4 +1,7 @@
 # 吐司寫筆記: 管理學入門  
+
+[![hackmd-github-sync-badge](https://hackmd.io/gGCB4KcbSyaUG6mvX0xW_Q/badge)](https://hackmd.io/gGCB4KcbSyaUG6mvX0xW_Q)
+
 **topic: `大學課程` `筆記`**  
 ## Ch1 組織、管理、管理者  
 ### 1-1 組織與組織的目標  
