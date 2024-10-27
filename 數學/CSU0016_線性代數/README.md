@@ -36,5 +36,5 @@
 - Cofactor Expansion
 - Defination of Determinant  
 - Property  
-- Cramer's Rule
+- Cramer's Rule  
 ...
