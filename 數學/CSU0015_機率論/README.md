@@ -27,4 +27,6 @@
 - Funstion of Random Variable
 - Exception, Mean and Variance  
 - Joint PMFs Conditioning and Independence  
-...
+- Conditioning  
+- Independence  
+...  
