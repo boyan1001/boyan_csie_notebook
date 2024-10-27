@@ -51,5 +51,5 @@ boyan_csie_notebook
 2. 所有筆記資源皆為公開且不可商用。
 3. 出於尊重每個人的智慧財產權，任何貢獻筆記者，我都會在該資料夾的README.md標註你為作者，並且在主目錄的README.md中標記你為contributer，歡迎大家貢獻你的筆記，讓這邊造福更多段考無助的小可憐吧~~  
 
-## Lisence  
+## 🪪 Lisence  
 [CC BY-NC 4.0](LICENSE.md) © Hank Chen  
