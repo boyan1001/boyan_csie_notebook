@@ -11,7 +11,7 @@
 + **學分數** : 3  
 
 ## 筆記概況  
-目前完成度約 : **30%** 
+目前完成度約 : **33%** 
   
 ### Ch1 Sample Space and Peobability
 - Set
