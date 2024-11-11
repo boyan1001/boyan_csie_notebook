@@ -1,5 +1,6 @@
 # 📚 木白的課程筆記資源  
 ![contributor](https://img.shields.io/github/contributors/boyan1001/boyan_csie_notebook?style=for-the-badge)
+![last_commit](https://img.shields.io/github/last-commit/boyan1001/boyan_csie_notebook?style=for-the-badge)
 ![license](https://img.shields.io/badge/license-CC_BY_NC_4.0-brightgreen?style=for-the-badge)
 
 
