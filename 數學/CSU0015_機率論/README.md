@@ -11,7 +11,7 @@
 + **學分數** : 3  
 
 ## 筆記概況  
-目前完成度約 : **33%** 
+目前完成度約 : **50%** 
   
 ### Ch1 Sample Space and Peobability
 - Set
@@ -28,5 +28,11 @@
 - Exception, Mean and Variance  
 - Joint PMFs Conditioning and Independence  
 - Conditioning  
-- Independence  
+- Independence
+
+### Ch3 General Random Variance  
+- Continuous random variable and PDFs
+- Cumulative Distribution Functions
+- Joint PDFs of Multiple Random Variables  
+- Conditioning  
 ...  
