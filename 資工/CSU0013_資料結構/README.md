@@ -13,7 +13,7 @@
 + **學分數** : 3  
 
 ## 筆記概況  
-目前完成度約 : **33%** 
+目前完成度約 : **40%** 
   
 ### Tree  
 - Formal Definition  
@@ -61,4 +61,36 @@
 - Definition
 - Transforming
 - Traversing  
-...
+  
+### Graphs  
+- Definition
+- Terminology
+- Adjacency
+- Subgraphs
+- Path
+- Simple path and cycle
+- Connected component
+- Strongly connected component
+- Degree of a vertex
+
+### Graph Representations  
+- Adjacency matrix
+- Adjacency lists
+- Adjacency multilists
+- Network
+
+### Traversals  
+- Depth first search (DFS)
+- Breadth first search (BFS)
+- Connected component
+
+### Spanning Trees  
+- Definition
+- Create spanning tree
+- Properties of spanning
+
+### Biconnected graph  
+- Articulation point
+- Biconnected component
+- Find biconnected component  
+...  
