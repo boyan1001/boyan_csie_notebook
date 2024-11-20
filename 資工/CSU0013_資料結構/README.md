@@ -3,6 +3,8 @@
 本課程是資工系的選修  
 
 本筆記可前往我的[HackMD](https://hackmd.io/@Toast1001/HkVyelLM1g)看，效果會比較好哦~  
+  
+本人是修**柯媽媽**的資結，如果你是修王泓倫的⚡神的話，可能幫不了你哦～  
 
 ## 課程資料  
 
@@ -14,7 +16,14 @@
 
 ## 筆記概況  
 目前完成度約 : **40%** 
-  
+
+### Equivalence Relations  
+- Definition  
+- Finding equivalent classes  
+
+### Additional Linked List Operation  
+- Free nodes  
+- Inverting a chain  
 ### Tree  
 - Formal Definition  
 - Terminology  
