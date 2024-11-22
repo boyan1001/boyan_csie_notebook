@@ -35,4 +35,5 @@
 - Cumulative Distribution Functions
 - Joint PDFs of Multiple Random Variables  
 - Conditioning  
-...  
+- The continuous Baye's rule  
+...
