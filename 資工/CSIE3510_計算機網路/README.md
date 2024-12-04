@@ -11,7 +11,7 @@
 + **學分數** : 3  
 
 ## 筆記概況  
-目前完成度約 : **25%** 
+目前完成度約 : **50%** 
   
 ### Ch1 Introduction  
 - Overview  
@@ -23,4 +23,12 @@
  
 ### Ch2 Application Layer  
 - Overview
+
+### Ch3 Transport Layer  
+- Transport-layer services
+- Multiplexing and demultiplexing
+- UDP
+- Reliable data transfer (rdt)
+- TCP
+- TCP congestion control
 ...
