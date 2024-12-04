@@ -12,7 +12,7 @@
 + **學分數** : 3  
 
 ## 筆記概況  
-目前完成度約 : **50%** 
+目前完成度約 : **66%** 
   
 ### Ch0 Introduction
 - Linear Funstions
@@ -38,4 +38,11 @@
 - Defination of Determinant  
 - Property  
 - Cramer's Rule  
+
+### Ch4 Subspace  
+- Subspace  
+- Basis and Dimension  
+- Dimension of Subspace Associated with a Matrix  
+- Cooridinate Systems  
+- Matrix Representations of Linear Operators  
 ...
