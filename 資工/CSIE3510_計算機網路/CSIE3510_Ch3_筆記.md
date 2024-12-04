@@ -1,7 +1,5 @@
 # 計算機網路筆記  
-:::warning
-期中考範圍之後會再補上，敬請期待 ^ ^  
-:::
+建議在 [HackMD](https://hackmd.io/@Toast1001/S1J7lOtxyg) 上面查看效果會更好哦~  
 ## Ch3 Transport Layer  
 ### Transport-Layer Serices  
 - Provide **logical communication** between application processes running on **different hosts**  
