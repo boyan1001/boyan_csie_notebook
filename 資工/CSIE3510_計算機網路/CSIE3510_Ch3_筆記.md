@@ -359,13 +359,19 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
 - **Approach**: 
     - increase sending rate until packet loss (congestion) occurs  
     - **Additive Increase**:  
-        - Increase sending rate by 1 MSS every RTT  
+        - Increase sending rate(cwnd) by 1 MSS every RTT  
         - Until loss detected  
     - **Multiplicative Decrease**:  
         - Sending rate in half at each loss event  
 ![image](https://hackmd.io/_uploads/HJvtIm6m1x.png)  
 
+- **TCP sending behavior**:  
+![image](https://hackmd.io/_uploads/rJwwiDTQkg.png)  
+    - Roughly: send **cwnd** bytes, wait RTT for ACKs, then send more bytes  
+    - $TCP\ rate \approx cwnd/RTT$  
+
 ![image](https://hackmd.io/_uploads/H1ecTLQaQJl.png)  
+
     
 #### CUBIC  
 ![image](https://hackmd.io/_uploads/rygNYm6XJe.png)  
@@ -374,6 +380,27 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
     - Use **cube function**: after cutting rate, initially ramp to $W_{\ max}$ **faster**, but approach $W_{\ max}$ more **slowly**  
 
 #### Delay-based TCP Congestion Control  
+- **Concept**: 
+    - Keeping sender-to-receiver pipe **just full enough, but no fuller**  
+    - Keep bottleneck link busy transmitting, but avoid high delays/buffering  
+
+![image](https://hackmd.io/_uploads/Hy23iD6Xyl.png)  
+
+- **Approach**:  
+    - $RTT_{\ min} - minimum\ observed\ RTT$  
+    - $Throughput_{\ uncongested} = cwnd/RTT_{\ min}$  
+    - When $Throughput_{\ measured} \approx Throughput_{\ uncongested}$:
+        - Path not congested  
+        - **increase** $cwnd$ linearly  
+    - When $Throughput_{\ measured} \ll Throughput_{\ uncongested}$: 
+        - Path congested
+        - **decrease** $cwnd$ linearly  
 
 #### Explicit Congestion Notofication (ECN)  
-- **Network-assisted** congestion control   
+- **Network-assisted** congestion control  
+    - **IP**:  
+        - Two bits in IP header maked **by network router** to indicate congestion  
+        - Congestion indication carried to destination  
+    - **TCP**:  
+        - Destination **sets ECE bit on ACK segment** to notify sender of congestion  
+![image](https://hackmd.io/_uploads/rJP7IOTmke.png)  
