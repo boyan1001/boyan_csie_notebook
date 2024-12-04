@@ -1,9 +1,5 @@
-# 計算機網路筆記  
-:::warning
-期中考範圍之後會再補上，敬請期待 ^ ^  
-:::
-## Ch3 Transport Layer  
-### Transport-Layer Serices  
+# 計算機網路: Ch3 Transport Layer  
+## Transport-Layer Serices  
 - Provide **logical communication** between application processes running on **different hosts**  
 - Actions:  
     - **Sender:**  
@@ -11,7 +7,7 @@
     - **Receiver**:  
         - reassembles segmens into messages  
 
-#### Transport protocals:  
+### Transport protocals:  
 
 | TCP                          | UDP                          |
 | ---------------------------- | ---------------------------- |
@@ -22,7 +18,7 @@
 | Without delay guarantees     | Without delay guarantees     |
 | Without bandwidth guarantees | Without bandwidth guarantees |
 
-### Multiplexing and Demultiplexing  
+## Multiplexing and Demultiplexing  
 ![image](https://hackmd.io/_uploads/By0CSws7Je.png)  
 
 - How demultiplexing work:  
@@ -55,8 +51,8 @@
     - **UDP**: demultiplexing using **destination port number**  
     - **TCP**: demultiplexing using **4-tuple**: source and destination IP addresses and port numbers  
 
-### UDP  
-#### Intro  
+## UDP  
+### Intro  
 - **Connectionless**: 
     - No handshaking  
     - Each UDP segment handled **independently** of others  
@@ -67,7 +63,7 @@
 - Small header size:  
 ![image](https://hackmd.io/_uploads/rk25avsmyx.png)  
 
-#### Checksum  
+### Checksum  
 - **Goal**: detect errors in transmitted segment  
 ![image](https://hackmd.io/_uploads/ry5aTvjQyx.png)  
 - **How to work**:  
@@ -86,12 +82,12 @@
     - It cannot detected **bit flip**  
 ![image](https://hackmd.io/_uploads/r1fkldsXJl.png)  
 
-### Principles of Reliable Data Transfer (rdt)  
-#### Principle  
+## Principles of Reliable Data Transfer (rdt)  
+### Principle  
 - The channel from sender to receiving is **unreliable**  
 ![image](https://hackmd.io/_uploads/HyoF-doXyx.png)  
 
-#### Interfaces  
+### Interfaces  
 - **rdt_send()**:  
     - Called from above  
     - Transfer data to **rdt**  
@@ -232,8 +228,8 @@
     - 當 window size = n 時，如果我們丟失 n 個 packet 的話，receiver window 與 sender window 的 seq # 所對應的 packet 將會不一樣，產生問題  
 ![image](https://hackmd.io/_uploads/SytK4_nQkg.png)  
 
-### TCP  
-#### Overview  
+## TCP  
+### Overview  
 - **Point-to-point**:  
     - one sender, one receiver  
 - **Reliable, in-order byte steam**:  
@@ -251,12 +247,12 @@
 - **Flow controlled**:  
     - Sender will not overwhelm receiver  
 
-#### TCP Segment Structure  
+### TCP Segment Structure  
 ![image](https://hackmd.io/_uploads/SJOq_9h71g.png)  
 - **Sequence number ans ACKs**:  
 ![image](https://hackmd.io/_uploads/HkzEt93Q1g.png)  
 
-#### TCP Round Trip Time  
+### TCP Round Trip Time  
 - If timeout too **short**: unnecessary retransmissions  
 - If timeout too **long**: slow reaction to segment loss  
 - **Estimate RTT**:  
@@ -271,12 +267,12 @@
     - $DevRTT = (1-\beta )*DevRTT + \beta *|SampleRTT-EstimatedRTT|,\ \beta = 0.25$  
     - $TimeoutInterval = EstimatedRTT + 4*DevRTT$  
 
-#### Fast Retransmit  
+### Fast Retransmit  
 When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without waiting for timeout  
 
 ![image](https://hackmd.io/_uploads/rJzWaq37Jx.png)  
 
-#### Flow control  
+### Flow control  
 - **Goal**: Avoid **TCP socket receiver buffers** overflow  
 ![image](https://hackmd.io/_uploads/SJjpCq3mJl.png)  
 
@@ -291,7 +287,7 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
 - **Sender** limit amout of unACKed data to received **rwnd**  
     - **Reciever** will send the size of rwnd back to **Sender**  
 
-#### Connection Management  
+### Connection Management  
 - Before exchanging data, **Sender/Receiver** need to handshake  
 
 - **TCP 3-way handshake**:  
@@ -313,15 +309,15 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
     - **Client send FIN**: Client want to close connection  
     - **Server send FIN**: Server want to close connection  
 
-### Principle of TCP Congestion Control  
+## Principle of TCP Congestion Control  
 - **Congestion**: **too many sources** sending too much data too fast for **network** to handle  
 
-#### Scenario 1  
+### Scenario 1  
 - One router, **infinite** buffers  
 - **no retransmission needed**  
 ![image](https://hackmd.io/_uploads/H1V6dn3Q1l.png)  
 
-#### Scenario 2  
+### Scenario 2  
 - One router, **finite** buffers  
 - sender **retransmits** lost, timed_out packet  
 ![image](https://hackmd.io/_uploads/S1HGt2h7yg.png)  
@@ -343,7 +339,7 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
     - **Un-needed duplicate**  
     ![image](https://hackmd.io/_uploads/S16DRfpQJe.png)  
     
-#### Scenario 3  
+### Scenario 3  
 ![image](https://hackmd.io/_uploads/BkPjRzp71x.png)  
 - Four senders  
 - Multi-hop paths  
@@ -351,7 +347,7 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
 - If packet dropped, **any upstream transmission capacity** and buffer used for that packet was wasted  
 ![image](https://hackmd.io/_uploads/ryOyk7aQyx.png)  
 
-#### Insight  
+### Insight  
 | Router | Buffer | Duplicate | Graph |
 | -------- | -------- | -------- | ------- |
 | 1 | infinite | no |  ![image](https://hackmd.io/_uploads/HygS523mJe.png =75%x)  |
@@ -359,7 +355,7 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
 | 1 | finite | yes | ![image](https://hackmd.io/_uploads/SyG1G7TQye.png) |
 | 4 | finite | yes | ![image](https://hackmd.io/_uploads/rJieMXT7kx.png) |
 
-### Methods of TCP Congestion Control  
+## Methods of TCP Congestion Control  
 
 
 | 分類 | 方法 |
@@ -367,7 +363,7 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
 | Loss-based | TCP AIMD(Reno), TCP Tache, TCP CUBIC|
 | Delay-based | BBR, TCP Vegas|
 
-#### AIMD (Additive Increase Multiplicative Decrease, Reno)  
+### AIMD (Additive Increase Multiplicative Decrease, Reno)  
 - **Approach**: 
     - increase sending rate until packet loss (congestion) occurs  
     - **Additive Increase**:  
@@ -385,42 +381,43 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
 - **Flaw**:  
     - It has bad efficiency in **high loss rate network**  
 
-#### Tahoe
-- **Slow Start**  
-    - Exponential growth  
-    - **IW** = Initial window  
-        - 在 3 handshaking 時已設定  
-    - $cwnd = cwnd + min(N, MSS)$  
-        - N = 收到 ACK 時，之前**尚未被確認的資料**之大小  
-        - 防止接收端採用**分段確認(ACK Division)**  
-    ![image](https://hackmd.io/_uploads/H1ecTLQaQJl.png)  
+### Tahoe
+#### Slow Start  
+- Exponential growth  
+- **IW** = Initial window  
+    - 在 3 handshaking 時已設定  
+- $cwnd = cwnd + min(N, MSS)$  
+    - N = 收到 ACK 時，之前**尚未被確認的資料**之大小  
+    - 防止接收端採用**分段確認(ACK Division)**  
+![image](https://hackmd.io/_uploads/H1ecTLQaQJl.png)  
 
-- **Congestion Avoidance**  
-    - Linear growth  
-    - $cwnd += 1$  
+#### Congestion Avoidance  
+- Linear growth  
+- $cwnd += 1$  
 
-- **Slow Start Threshold (ssthresh)**  
-    - 一個 slow start 轉為 congestion avoidance 的門檻  
-        - $cwnd < ssthresh$: Use **slow start**  
-        - $cwnd > ssthresh$: Use **congestion avoidance**  
-    ![image](https://hackmd.io/_uploads/HyxtYF6XJl.png)  
-    - When packet loss happened:  
-        - Timeout:  
-            - $ssthresh = cwnd/2$  
-            - $cwnd = IW$  
-            - Slow start  
-        - 3 duplicate ACKs:  
-            - Fast retransmit 
+#### Slow Start Threshold (ssthresh)  
+- 一個 slow start 轉為 congestion avoidance 的門檻  
+    - $cwnd < ssthresh$: Use **slow start**  
+    - $cwnd > ssthresh$: Use **congestion avoidance**  
+![image](https://hackmd.io/_uploads/HyxtYF6XJl.png)  
+- When packet loss happened:  
+    - Timeout:  
+        - $ssthresh = cwnd/2$  
+        - $cwnd = IW$  
+        - Slow start  
+    - 3 duplicate ACKs:  
+        - Fast retransmit 
 
-- **Flaw**: When packet loss, cwnd becomes IW. It is hard to recover to original cwnd  
+#### Flaw  
+When packet loss, cwnd becomes IW. It is hard to recover to original cwnd  
     
-#### CUBIC  
+### CUBIC  
 ![image](https://hackmd.io/_uploads/rygNYm6XJe.png)  
 - **Insight**:  
     - $W_{\ max}$: sending rate at which congestion loss was detected  
     - Use **cube function**: after cutting rate, initially ramp to $W_{\ max}$ **faster**, but approach $W_{\ max}$ more **slowly**  
 
-#### Delay-based TCP Congestion Control  
+### Delay-based TCP Congestion Control  
 - **Concept**: 
     - Keeping sender-to-receiver pipe **just full enough, but no fuller**  
     - Keep bottleneck link busy transmitting, but avoid high delays/buffering  
@@ -439,7 +436,7 @@ When receipt of **3 duplicate ACKs**, TCP **retransmit** missing segment without
 
 
 
-#### Explicit Congestion Notification (ECN)  
+### Explicit Congestion Notification (ECN)  
 - **Network-assisted** congestion control  
     - **IP**:  
         - Two bits in IP header maked **by network router** to indicate congestion  
