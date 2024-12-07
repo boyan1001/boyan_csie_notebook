@@ -12,7 +12,7 @@
 + **學分數** : 3  
 
 ## 筆記概況  
-目前完成度約 : **66%** 
+目前完成度約 : **83%** 
   
 ### Ch0 Introduction
 - Linear Funstions
