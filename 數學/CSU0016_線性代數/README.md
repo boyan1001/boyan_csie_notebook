@@ -45,4 +45,10 @@
 - Dimension of Subspace Associated with a Matrix  
 - Cooridinate Systems  
 - Matrix Representations of Linear Operators  
+
+### Ch5 Eigenvalues, Eigenvectors, and Diagonalization  
+- Eigenvalues and Eigenvectors  
+- Characteristic Polynomial  
+- Eigenvalues of Similar Matrices  
+- Diagonalization of Matrices  
 ...
