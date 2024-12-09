@@ -11,7 +11,7 @@
 + **學分數** : 3  
 
 ## 筆記概況  
-目前完成度約 : **70%** 
+目前完成度約 : **80%** 
   
 ### Ch1 Sample Space and Peobability
 - Set
@@ -36,4 +36,8 @@
 - Joint PDFs of Multiple Random Variables  
 - Conditioning  
 - The continuous Baye's rule  
+
+### Ch4 Further Topic on Random Variance  
+- Derived Distribution  
+- Covariance and Correlation  
 ...
