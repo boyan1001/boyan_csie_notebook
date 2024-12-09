@@ -37,5 +37,5 @@
 - What's inside a router?  
 - IP  
 - Generalized forwarding: SDN  
-- Middleboxes 
+- Middleboxes  
 ... 
