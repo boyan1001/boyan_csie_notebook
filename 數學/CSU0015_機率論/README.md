@@ -11,7 +11,7 @@
 + **學分數** : 3  
 
 ## 筆記概況  
-目前完成度約 : **80%** 
+目前完成度約 : **100%** 
   
 ### Ch1 Sample Space and Peobability
 - Set
@@ -40,4 +40,6 @@
 ### Ch4 Further Topic on Random Variance  
 - Derived Distribution  
 - Covariance and Correlation  
-...
+- Conditional Expectation and Variance Revisited  
+- Transform  
+- The sum of Random Number of Independent Random  
