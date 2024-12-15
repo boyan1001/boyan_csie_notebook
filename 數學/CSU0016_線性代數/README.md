@@ -12,7 +12,7 @@
 + **學分數** : 3  
 
 ## 筆記概況  
-目前完成度約 : **83%** 
+目前完成度約 : **100%** 
   
 ### Ch0 Introduction
 - Linear Funstions
@@ -51,4 +51,12 @@
 - Characteristic Polynomial  
 - Eigenvalues of Similar Matrices  
 - Diagonalization of Matrices  
+
+### Ch6 Orthogonality  
+- Geometry of Vectors  
+- Orthogonal Vectors  
+- Orthogonal Projections  
+- Least-Squares Approximation  
+- Orthogonal Matrices and Operators  
+- Symmetric Matrices  
 ...
