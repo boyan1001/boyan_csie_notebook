@@ -8,10 +8,14 @@
 + **學分數** : 2  
 ## 讀書方法  
 老師考前會洩題，有讀書基本80分。  
+  
 此外，老師上課簡報基本上不會外流，建議買書；或者跟我一樣上網找課本連結或簡報連結。  
 ## 筆記概況  
-目前完成度約 : **50%**  
-本筆記參考[《管理學概論（6版）》](https://www.books.com.tw/products/0010916669?srsltid=AfmBOoqHWJHu_G8ZHoDen7A4JQ-VpJNJMxaV2MaaY66eBDpTCq7OIzIy)的內容製作。
+目前完成度約 : **100%**  
+  
+本筆記參考[《管理學概論（6版）》](https://www.books.com.tw/products/0010916669?srsltid=AfmBOoqHWJHu_G8ZHoDen7A4JQ-VpJNJMxaV2MaaY66eBDpTCq7OIzIy)的內容製作。  
+  
+期末因為有提前洩題，因此只有製作期末題目相對應的部分，並沒有全範圍都做，敬請見諒。  
   
 ### Ch1 組織、管理、管理者  
 - 組織與組織的目標  
@@ -36,4 +40,5 @@
 - 規劃的內涵  
 - 規劃的程序  
 - 目標種類、目標網與目標設定  
-...
+
+### 期末考點大補帖  
